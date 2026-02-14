@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"os"
 	core "github.com/MJ-NMR/gol/core"
+	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
 )
@@ -34,7 +34,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.WindowSizeMsg:
 		m.frame = core.CreateState(uint(msg.Height-3), uint(msg.Width/2))
-		m.courser = location{0,0}
+		m.courser = location{0, 0}
 		return m, nil
 
 	case tea.KeyMsg:
@@ -91,7 +91,6 @@ func (m model) View() (s string) {
 		}
 		s += "\n"
 	}
-
 
 	s += "\nPress \033[32mq\033[0m: quit, \033[32mEnter\033[0m: next round, \033[32mSpace\033[0m: toggele cell\n"
 
