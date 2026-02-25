@@ -7,7 +7,7 @@ This is a simple implementation of Conway's Game of Life.
 To build the project, make sure you have Go installed, then run:
 
 ```bash
-go build -o gol .
+go build
 ```
 
 This will create an executable named `gol` in the current directory.

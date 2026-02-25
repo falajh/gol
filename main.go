@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	core "github.com/MJ-NMR/gol/core"
+	"github.com/MJ-NMR/gol/core"
 	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
